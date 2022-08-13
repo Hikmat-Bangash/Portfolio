@@ -1,0 +1,35 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .active {
+      @apply text-cyan-400  border-b-2 border-cyan-400;
+    }
+    .input {
+      @apply bg-gray-800 text-cyan-300 text-lg h-[60px] border-2 border-dashed focus:bg-slate-800 border-pink-500  outline-none pl-6 w-full font-serif text-[15px] rounded-md  opacity-90 hover:opacity-100 hover:border-cyan-500;
+    }
+    .textarea {
+      @apply bg-gray-800 text-cyan-300 text-lg resize-none  border-2 border-dashed border-pink-500  w-full outline-none p-6 rounded-sm h-[200px]  opacity-90 hover:opacity-100 hover:border-dashed hover:border-cyan-500;
+    }
+
+  .subtitle {
+    @apply text-base mb-16 lg:mb-24 max-w-[520px];
+  }
+  .btn {
+    @apply py-4 px-7 font-medium text-white flex items-center justify-center rounded-sm hover:bg-pink-600 transition-all;
+  }
+  .btn-lg {
+    @apply h-[54px];
+  }
+  .btn-md {
+    @apply h-[48px];
+  }
+  .section {
+    @apply py-12 lg:py-32;
+  }
+  .section-title {
+    @apply text-3xl lg:text-4xl font-medium lg:font-extrabold mb-5;
+  }
+  }
